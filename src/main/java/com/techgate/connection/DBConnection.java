@@ -16,7 +16,7 @@ public class DBConnection {
 	}
 
 	public DBConnection() throws ClassNotFoundException, SQLException, InstantiationException, IllegalAccessException{
-		Class.forName("com.mysql.jdbc.Driver").newInstance();
+		Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 		//con= DriverManager.getConnection(connectionURL, "vipnumberstore", "V!Pstore#321");
 		con= DriverManager.getConnection(connectionURL, "root", "root");
 	}
