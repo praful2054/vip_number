@@ -1,0 +1,62 @@
+Category id,Vendor ID,Product Name,Product Type,Parent Operator, Current Operator,Circle,Number Status,Activation Date,Recharge Date,Recharge Amount,Recharge Validity,Last Calling Date,Rate In Ruppes,Vendor Rate,Discount
+6,1,7557775577,Featured,Idea,Idea,Maharashtra,FRESH,09/14/2019,,,,,200000,48000,0
+13,1,6265999999,Featured,Airtel ,Airtel ,Mumbai,V2V,07/30/2019,,,,,125000,60000,0
+13,1,7520333333,Featured,Vodafone ,Vodafone ,Mumbai,I2I,07/30/2019,,,,,50000,40000,0
+13,1,7520444444,,Vodafone ,Vodafone ,Mumbai,Pretopost,07/30/2019,,,,,50000,40000,0
+6,1,9628796287,,Idea,Idea,Maharashtra,RTP, ,,,,,25000,10000,0
+6,1,8197481974,,Vodafone ,Vodafone ,Mumbai,Pretopost,09/18/2019,,,,,17500,8000,0
+6,1,8545985459,,Vodafone ,Vodafone ,Mumbai,Pretopost,09/18/2019,,,,,17500,11000,0
+6,1,7375873758,,Vodafone ,Vodafone ,Mumbai,Pretopost,07/30/2019,,,,,17500,10000,0
+18,1,9389389834,,Jio,Jio,Mumbai,Pretopost,09/17/2019,,,,,20000,10000,0
+18,1,9389389837,,Airtel,Airtel,Mumbai,Pretopost,09/15/2019,,,,,20000,10000,0
+2,1,8282929282,,Airtel-Docomo,Airtel-Docomo,Kolkata,Pretopost, ,,,,,20000,200,0
+12,1,7550777774,,Airtel,Airtel,Mumbai,Pretopost, ,,,,,8500,1800,0
+7,1,8282982823,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,8500,1000,0
+11,1,8976300001,,Airtel-Docomo,Airtel-Docomo,Mumbai,RTP, ,,,,,8500,1000,0
+2,1,8655552200,,Airtel-Docomo,Airtel-Docomo,Mumbai,Pretopost, ,,,,,4000,1000,0
+17,1,8797712712,,Airtel-Docomo,Airtel-Docomo,Bihar,RTP, ,,,,,3500,1000,0
+11,1,8976200006,,Airtel-Docomo,Airtel-Docomo,Mumbai,RTP, ,,,,,3500,1000,0
+7,1,9882988274,,Idea,Idea,Maharashtra,I2I, ,,,,,2500,800,0
+2,1,9881888728,,Idea,Idea,Maharashtra,RTP, ,,,,,2500,500,0
+3,1,8282825839,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825869,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825870,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825894,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827370,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827913,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP,  ,,,,,2000,600,0
+3,1,8282827943,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824418,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824429,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824451,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824457,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824471,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282824476,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825537,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825549,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825578,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825594,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825596,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282825597,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827749,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827751,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827753,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827756,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282827763,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+3,1,8282829958,,Airtel-Docomo,Airtel-Docomo,Kolkata,RTP, ,,,,,2000,600,0
+2,1,9224208420,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2500,100,0
+2,1,9221009003,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2500,100,0
+2,1,9222243624,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2500,100,0
+7,1,8822472288,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2000,100,0
+7,1,8822512288,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2000,100,0
+7,1,8822572288,,Jio,Jio,Mumbai,C Code RTP, ,,,,,2000,100,0
+3,1,9835621313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1500,100,0
+3,1,9905481313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1500,100,0
+3,1,9693521313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1500,100,0
+3,1,9693211313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1500,100,0
+3,1,9693061313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1500,100,0
+3,1,7856981313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1200,100,0
+3,1,7857011313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1200,100,0
+3,1,7061851313,,Jio,Jio,Mumbai,C Code RTP, ,,,,,1200,100,0
+3,1,7061551313,,Jio,Jio,Mumbai,C Code RTP,,,,,,1200,100,0
+3,1,7061591313,,Jio,Jio,Mumbai,C Code RTP,,,,,,1200,100,0
+3,1,7061881313,,Jio,Jio,Mumbai,C Code RTP,,,,,,1200,100,0

@@ -1,0 +1,1597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>VIPNUMBERSTORE</display-name>
+<welcome-file-list>
+    <welcome-file>home.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+        <error-code>404</error-code>
+        <location>/home.jsp</location>
+</error-page>
+  
+  <session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+  <listener>
+  	 <display-name>CustomSerlvletContextListener</display-name>
+  	 <listener-class>com.techgate.listener.CustomServletContextListener</listener-class>
+   </listener>
+   
+   
+   <servlet>
+    <servlet-name>index</servlet-name>
+    <jsp-file>/home.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>index</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+
+  
+    <servlet>
+    <servlet-name>VIPNumbers</servlet-name>
+    <jsp-file>/Products.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VIPNumbers</servlet-name>
+    <url-pattern>/VIPNumbers</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>CategoryNumbers</servlet-name>
+    <jsp-file>/CateProducts.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CategoryNumbers</servlet-name>
+    <url-pattern>/CategoryNumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>searchNumbers</servlet-name>
+    <jsp-file>/searchNumbers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>searchNumbers</servlet-name>
+    <url-pattern>/searchNumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sumTotal</servlet-name>
+    <jsp-file>/sumtotal.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sumTotal</servlet-name>
+    <url-pattern>/sumTotal</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>priceNumbers</servlet-name>
+    <jsp-file>/priceNumbers.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>priceNumbers</servlet-name>
+    <url-pattern>/priceNumbers</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>productDetails</servlet-name>
+    <jsp-file>/ProductDescription.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>productDetails</servlet-name>
+    <url-pattern>/productDetails</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet>
+    <servlet-name>storeState</servlet-name>
+    <jsp-file>/storeState.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>storeState</servlet-name>
+    <url-pattern>/storeState</url-pattern>
+  </servlet-mapping>  
+  
+  
+  <servlet>
+    <servlet-name>checkout</servlet-name>
+    <jsp-file>/checkout.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>checkout</servlet-name>
+    <url-pattern>/checkout</url-pattern>
+  </servlet-mapping>
+  
+    
+  
+  <servlet>
+    <servlet-name>orderConfirm</servlet-name>
+    <jsp-file>/orderConfirm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>orderConfirm</servlet-name>
+    <url-pattern>/orderConfirm</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>contactUsDetils</servlet-name>
+    <jsp-file>/contactUsDetils.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>contactUsDetils</servlet-name>
+    <url-pattern>/contactUsDetils</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>loadData</servlet-name>
+    <jsp-file>/loadData.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loadData</servlet-name>
+    <url-pattern>/loadData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loadCategoryData</servlet-name>
+    <jsp-file>/loadCategoryData.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loadCategoryData</servlet-name>
+    <url-pattern>/loadCategoryData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>loadPriceData</servlet-name>
+    <jsp-file>/loadPriceData.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loadPriceData</servlet-name>
+    <url-pattern>/loadPriceData</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vanityNumberEnquiry</servlet-name>
+    <jsp-file>/vanityNumberEnquiry.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vanityNumberEnquiry</servlet-name>
+    <url-pattern>/vanityNumberEnquiry</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>VIP-login</servlet-name>
+    <jsp-file>/CP/login.html</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VIP-login</servlet-name>
+    <url-pattern>/VIP-login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>logout</servlet-name>
+    <jsp-file>/CP/logout.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>logout</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>validateLogin</servlet-name>
+    <jsp-file>/CP/validateLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>validateLogin</servlet-name>
+    <url-pattern>/validateLogin</url-pattern>
+  </servlet-mapping>
+ 
+  <servlet>
+    <servlet-name>dashboard</servlet-name>
+    <jsp-file>/CP/dashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dashboard</servlet-name>
+    <url-pattern>/dashboard</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+    <servlet-name>getNumberCalc</servlet-name>
+    <jsp-file>/CP/getNumberCalc.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getNumberCalc</servlet-name>
+    <url-pattern>/getNumberCalc</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getPhoneWord</servlet-name>
+    <jsp-file>/CP/getPhoneWord.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getPhoneWord</servlet-name>
+    <url-pattern>/getPhoneWord</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>masterForm</servlet-name>
+    <jsp-file>/CP/MasterLookupForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>masterForm</servlet-name>
+    <url-pattern>/masterForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>masterView</servlet-name>
+    <jsp-file>/CP/MaterLookUpView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>masterView</servlet-name>
+    <url-pattern>/masterView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>masterEdit</servlet-name>
+    <jsp-file>/CP/MasterLookUpEdit.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>masterEdit</servlet-name>
+    <url-pattern>/masterEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateMaster</servlet-name>
+    <jsp-file>/CP/UpdateMasterLookUp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateMaster</servlet-name>
+    <url-pattern>/updateMaster</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertMaster</servlet-name>
+    <jsp-file>/CP/InsertMasterLookUp.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertMaster</servlet-name>
+    <url-pattern>/insertMaster</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>employeeForm</servlet-name>
+    <jsp-file>/CP/EmployeeForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>employeeForm</servlet-name>
+    <url-pattern>/employeeForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertEmployee</servlet-name>
+    <jsp-file>/CP/insertEmployee.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertEmployee</servlet-name>
+    <url-pattern>/insertEmployee</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>employeeDetails</servlet-name>
+    <jsp-file>/CP/EmployeeDetailsView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>employeeDetails</servlet-name>
+    <url-pattern>/employeeDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>employeeEditForm</servlet-name>
+    <jsp-file>/CP/EmployeeEditForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>employeeEditForm</servlet-name>
+    <url-pattern>/employeeEditForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateEmployee</servlet-name>
+    <jsp-file>/CP/updateEmployee.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateEmployee</servlet-name>
+    <url-pattern>/updateEmployee</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>pendingApproval</servlet-name>
+    <jsp-file>/CP/pendingApproval.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pendingApproval</servlet-name>
+    <url-pattern>/pendingApproval</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>categoryForm</servlet-name>
+    <jsp-file>/CP/CategoriesForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>categoryForm</servlet-name>
+    <url-pattern>/categoryForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>categoryView</servlet-name>
+    <jsp-file>/CP/CategoriesDetailsView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>categoryView</servlet-name>
+    <url-pattern>/categoryView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>productForm</servlet-name>
+    <jsp-file>/CP/ProductForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productForm</servlet-name>
+    <url-pattern>/productForm</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>productView</servlet-name>
+    <jsp-file>/CP/ProductDetailsView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productView</servlet-name>
+    <url-pattern>/productView</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>bulkUpload</servlet-name>
+    <jsp-file>/CP/UploadProductForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bulkUpload</servlet-name>
+    <url-pattern>/bulkUpload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>customerDetails</servlet-name>
+    <jsp-file>/CP/CustomerDetailView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customerDetails</servlet-name>
+    <url-pattern>/customerDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>orderDetails</servlet-name>
+    <jsp-file>/CP/OrderDetailView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderDetails</servlet-name>
+    <url-pattern>/orderDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>paymentEntry</servlet-name>
+    <jsp-file>/CP/paymentEntry.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>paymentEntry</servlet-name>
+    <url-pattern>/paymentEntry</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>paymentView</servlet-name>
+    <jsp-file>/CP/paymentView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>paymentView</servlet-name>
+    <url-pattern>/paymentView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>coupouns</servlet-name>
+    <jsp-file>/CP/coupouns.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>coupouns</servlet-name>
+    <url-pattern>/coupouns</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>coupounsView</servlet-name>
+    <jsp-file>/CP/coupounsView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>coupounsView</servlet-name>
+    <url-pattern>/coupounsView</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>delete</servlet-name>
+    <jsp-file>/CP/Delete.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>activate</servlet-name>
+    <jsp-file>/CP/Activate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>activate</servlet-name>
+    <url-pattern>/activate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>categoriesEdit</servlet-name>
+    <jsp-file>/CP/CategoriesEditForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>categoriesEdit</servlet-name>
+    <url-pattern>/categoriesEdit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateCategories</servlet-name>
+    <jsp-file>/CP/UpdateCategories.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateCategories</servlet-name>
+    <url-pattern>/updateCategories</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertCategories</servlet-name>
+    <jsp-file>/CP/InsertCategories.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertCategories</servlet-name>
+    <url-pattern>/insertCategories</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertCoupoun</servlet-name>
+    <jsp-file>/CP/InsertCoupoun.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertCoupoun</servlet-name>
+    <url-pattern>/insertCoupoun</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>customerAddressDetails</servlet-name>
+    <jsp-file>/CP/CustomerAddressDetail.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customerAddressDetails</servlet-name>
+    <url-pattern>/customerAddressDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>productImageView</servlet-name>
+    <jsp-file>/CP/ProductImageView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productImageView</servlet-name>
+    <url-pattern>/productImageView</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>productImageUpload</servlet-name>
+    <jsp-file>/CP/ProductImageUpload.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>productImageUpload</servlet-name>
+    <url-pattern>/productImageUpload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>shippingDetails</servlet-name>
+    <jsp-file>/CP/ShippingDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>shippingDetails</servlet-name>
+    <url-pattern>/shippingDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>purchaseDeails</servlet-name>
+    <jsp-file>/CP/PurchaseDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>purchaseDeails</servlet-name>
+    <url-pattern>/purchaseDeails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertPayment</servlet-name>
+    <jsp-file>/CP/InsertPayment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertPayment</servlet-name>
+    <url-pattern>/insertPayment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>rateForm</servlet-name>
+    <jsp-file>/CP/RateForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rateForm</servlet-name>
+    <url-pattern>/rateForm</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>UpdateProductDetails</servlet-name>
+    <jsp-file>/CP/UpdateProductDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductDetails</servlet-name>
+    <url-pattern>/UpdateProductDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>InsertProductDetail</servlet-name>
+    <jsp-file>/CP/InsertProductDetail.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertProductDetail</servlet-name>
+    <url-pattern>/InsertProductDetail</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>upload</servlet-name>
+    <jsp-file>/CP/upload.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>upload</servlet-name>
+    <url-pattern>/upload</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UpdateProductImageDetails</servlet-name>
+    <jsp-file>/CP/UpdateProductImageDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProductImageDetails</servlet-name>
+    <url-pattern>/UpdateProductImageDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>bulkNumberUpdate</servlet-name>
+    <jsp-file>/CP/bulkNumberUpdate.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>bulkNumberUpdate</servlet-name>
+    <url-pattern>/bulkNumberUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateBulkNumbers</servlet-name>
+    <jsp-file>/CP/updateBulkNumbers.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>updateBulkNumbers</servlet-name>
+    <url-pattern>/updateBulkNumbers</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertUpdateRate</servlet-name>
+    <jsp-file>/CP/InsertUpdateRate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertUpdateRate</servlet-name>
+    <url-pattern>/InsertUpdateRate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>InsertUpdateShipping</servlet-name>
+    <jsp-file>/CP/InsertUpdateShipping.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertUpdateShipping</servlet-name>
+    <url-pattern>/InsertUpdateShipping</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>BulkInsertProduct</servlet-name>
+    <jsp-file>/CP/BulkInsertProduct.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BulkInsertProduct</servlet-name>
+    <url-pattern>/BulkInsertProduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ProductEditForm</servlet-name>
+    <jsp-file>/CP/ProductEditForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductEditForm</servlet-name>
+    <url-pattern>/ProductEditForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>getSubCategoryAjax</servlet-name>
+    <jsp-file>/CP/getSubCategoryAjax.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>getSubCategoryAjax</servlet-name>
+    <url-pattern>/getSubCategoryAjax</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CheckProductCodeAjax</servlet-name>
+    <jsp-file>/CP/CheckProductCodeAjax.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckProductCodeAjax</servlet-name>
+    <url-pattern>/CheckProductCodeAjax</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>blog</servlet-name>
+    <jsp-file>/CP/BlogForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>blog</servlet-name>
+    <url-pattern>/blog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertblog</servlet-name>
+    <jsp-file>/CP/InsertBlog.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertblog</servlet-name>
+    <url-pattern>/insertblog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewblog</servlet-name>
+    <jsp-file>/CP/BlogView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewblog</servlet-name>
+    <url-pattern>/viewblog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>blogComments</servlet-name>
+    <jsp-file>/CP/BlogComments.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>blogComments</servlet-name>
+    <url-pattern>/blogComments</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>newsletter</servlet-name>
+    <jsp-file>/newsletter.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newsletter</servlet-name>
+    <url-pattern>/newsletter</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>newsletters</servlet-name>
+    <jsp-file>/CP/newsletter.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newsletters</servlet-name>
+    <url-pattern>/newsletters</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>cart</servlet-name>
+    <jsp-file>/cart.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cart</servlet-name>
+    <url-pattern>/cart</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CartActivity</servlet-name>
+    <jsp-file>/CartActivity.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CartActivity</servlet-name>
+    <url-pattern>/CartActivity</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>sendOTP</servlet-name>
+    <jsp-file>/sendOTP.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sendOTP</servlet-name>
+    <url-pattern>/sendOTP</url-pattern>
+  </servlet-mapping>
+  
+ 
+    <servlet>
+    <servlet-name>paymentconfirm</servlet-name>
+    <jsp-file>/paymentconfirm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>paymentconfirm</servlet-name>
+    <url-pattern>/paymentconfirm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>enquirys</servlet-name>
+    <jsp-file>/CP/enquirys.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enquirys</servlet-name>
+    <url-pattern>/enquirys</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>enquiryFollowup</servlet-name>
+    <jsp-file>/CP/enquiryFollowup.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enquiryFollowup</servlet-name>
+    <url-pattern>/enquiryFollowup</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>enquiryFollowupComment</servlet-name>
+    <jsp-file>/CP/enquiryFollowupComment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enquiryFollowupComment</servlet-name>
+    <url-pattern>/enquiryFollowupComment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>pgResponse</servlet-name>
+    <jsp-file>/pgResponse.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pgResponse</servlet-name>
+    <url-pattern>/pgResponse</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>registerCustomer</servlet-name>
+    <jsp-file>/InsertCustomerDetails2.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerCustomer</servlet-name>
+    <url-pattern>/registerCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>orderFollowup</servlet-name>
+    <jsp-file>/CP/orderFollowup.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderFollowup</servlet-name>
+    <url-pattern>/orderFollowup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>orderFollowupComment</servlet-name>
+    <jsp-file>/CP/orderFollowupComment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>orderFollowupComment</servlet-name>
+    <url-pattern>/orderFollowupComment</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>AuthenticateLogin</servlet-name>
+    <jsp-file>/AuthenticateLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuthenticateLogin</servlet-name>
+    <url-pattern>/AuthenticateLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ivrDemo</servlet-name>
+    <jsp-file>/CP/ivrDemo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ivrDemo</servlet-name>
+    <url-pattern>/ivrDemo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ivrDemoFollowup</servlet-name>
+    <jsp-file>/CP/ivrDemoFollowup.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ivrDemoFollowup</servlet-name>
+    <url-pattern>/ivrDemoFollowup</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>ivrFollowupComment</servlet-name>
+    <jsp-file>/CP/ivrFollowupComment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ivrFollowupComment</servlet-name>
+    <url-pattern>/ivrFollowupComment</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>statusUpdate</servlet-name>
+    <jsp-file>/CP/statusUpdate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>statusUpdate</servlet-name>
+    <url-pattern>/statusUpdate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>updateStatus</servlet-name>
+    <jsp-file>/CP/updateStatus.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateStatus</servlet-name>
+    <url-pattern>/updateStatus</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>offlineEnquires</servlet-name>
+    <jsp-file>/CP/offlineEnquires.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>offlineEnquires</servlet-name>
+    <url-pattern>/offlineEnquires</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>InsertofflineEnquires</servlet-name>
+    <jsp-file>/CP/InsertofflineEnquires.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertofflineEnquires</servlet-name>
+    <url-pattern>/InsertofflineEnquires</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>offlineEnquiresDetails</servlet-name>
+    <jsp-file>/CP/offlineEnquiresDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>offlineEnquiresDetails</servlet-name>
+    <url-pattern>/offlineEnquiresDetails</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>offlineEnquiresFollowup</servlet-name>
+    <jsp-file>/CP/offlineEnquiresFollowup.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>offlineEnquiresFollowup</servlet-name>
+    <url-pattern>/offlineEnquiresFollowup</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>offlineEnquiresFollowupComment</servlet-name>
+    <jsp-file>/CP/offlineEnquiresFollowupComment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>offlineEnquiresFollowupComment</servlet-name>
+    <url-pattern>/offlineEnquiresFollowupComment</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+
+
+
+
+    <servlet>
+    <servlet-name>requirement</servlet-name>
+    <jsp-file>/CP/requirement.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requirement</servlet-name>
+    <url-pattern>/requirement</url-pattern>
+  </servlet-mapping>
+  
+      <servlet>
+    <servlet-name>InsertRequirement</servlet-name>
+    <jsp-file>/CP/InsertRequirement.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>InsertRequirement</servlet-name>
+    <url-pattern>/InsertRequirement</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>requirementDetails</servlet-name>
+    <jsp-file>/CP/requirementDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requirementDetails</servlet-name>
+    <url-pattern>/requirementDetails</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>requirementFollowup</servlet-name>
+    <jsp-file>/CP/requirementFollowup.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requirementFollowup</servlet-name>
+    <url-pattern>/requirementFollowup</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>requirementFollowupComment</servlet-name>
+    <jsp-file>/CP/requirementFollowupComment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>requirementFollowupComment</servlet-name>
+    <url-pattern>/requirementFollowupComment</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>AuditReport</servlet-name>
+    <jsp-file>/CP/AuditReport.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AuditReport</servlet-name>
+    <url-pattern>/AuditReport</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>validateMobileNo</servlet-name>
+    <jsp-file>/CP/validateMobileNo.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>validateMobileNo</servlet-name>
+    <url-pattern>/validateMobileNo</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>validateEmailiD</servlet-name>
+    <jsp-file>/CP/validateEmailiD.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>validateEmailiD</servlet-name>
+    <url-pattern>/validateEmailiD</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>viewNumberDetails</servlet-name>
+    <jsp-file>/CP/viewNumberDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>viewNumberDetails</servlet-name>
+    <url-pattern>/viewNumberDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportProducts</servlet-name>
+    <jsp-file>/CP/exportProducts.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportProducts</servlet-name>
+    <url-pattern>/exportProducts</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportOrders</servlet-name>
+    <jsp-file>/CP/exportOrders.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportOrders</servlet-name>
+    <url-pattern>/exportOrders</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportEnquiries</servlet-name>
+    <jsp-file>/CP/exportEnquiries.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportEnquiries</servlet-name>
+    <url-pattern>/exportEnquiries</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportOfflineEnquires</servlet-name>
+    <jsp-file>/CP/exportOfflineEnquires.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exportOfflineEnquires</servlet-name>
+    <url-pattern>/exportOfflineEnquires</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>rechargeReminder</servlet-name>
+    <jsp-file>/CP/rechargeReminder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rechargeReminder</servlet-name>
+    <url-pattern>/rechargeReminder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>myInvoice</servlet-name>
+    <jsp-file>/myInvoice.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>myInvoice</servlet-name>
+    <url-pattern>/myInvoice</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>customerHistory</servlet-name>
+    <jsp-file>/CP/customerHistory.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>customerHistory</servlet-name>
+    <url-pattern>/customerHistory</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>employeeHistory</servlet-name>
+    <jsp-file>/CP/employeeHistory.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>employeeHistory</servlet-name>
+    <url-pattern>/employeeHistory</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>enquiryHistory</servlet-name>
+    <jsp-file>/CP/enquiryHistory.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>enquiryHistory</servlet-name>
+    <url-pattern>/enquiryHistory</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>editCustomer</servlet-name>
+    <jsp-file>/CP/editCustomer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>editCustomer</servlet-name>
+    <url-pattern>/editCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateCustomer</servlet-name>
+    <jsp-file>/CP/updateCustomer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateCustomer</servlet-name>
+    <url-pattern>/updateCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addCustomer</servlet-name>
+    <jsp-file>/CP/addCustomer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addCustomer</servlet-name>
+    <url-pattern>/addCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertCustomer</servlet-name>
+    <jsp-file>/CP/insertCustomer.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertCustomer</servlet-name>
+    <url-pattern>/insertCustomer</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>confirmOrder</servlet-name>
+    <jsp-file>/CP/confirmOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>confirmOrder</servlet-name>
+    <url-pattern>/confirmOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>offlineOrder</servlet-name>
+    <jsp-file>/CP/offlineOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>offlineOrder</servlet-name>
+    <url-pattern>/offlineOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>placeOfflineOrder</servlet-name>
+    <jsp-file>/CP/placeOfflineOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>placeOfflineOrder</servlet-name>
+    <url-pattern>/placeOfflineOrder</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertofflineOrder</servlet-name>
+    <jsp-file>/CP/insertofflineOrder.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertofflineOrder</servlet-name>
+    <url-pattern>/insertofflineOrder</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>pendingPaymentApproval</servlet-name>
+    <jsp-file>/CP/pendingPaymentApproval.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pendingPaymentApproval</servlet-name>
+    <url-pattern>/pendingPaymentApproval</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>paymentApproval</servlet-name>
+    <jsp-file>/CP/paymentApproval.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>paymentApproval</servlet-name>
+    <url-pattern>/paymentApproval</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>pendingProductEditing</servlet-name>
+    <jsp-file>/CP/pendingProductEditing.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pendingProductEditing</servlet-name>
+    <url-pattern>/pendingProductEditing</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>vendorPayments</servlet-name>
+    <jsp-file>/CP/vendorPayments.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorPayments</servlet-name>
+    <url-pattern>/vendorPayments</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorTotalCredit</servlet-name>
+    <jsp-file>/CP/vendorTotalCredit.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorTotalCredit</servlet-name>
+    <url-pattern>/vendorTotalCredit</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorTotalDebit</servlet-name>
+    <jsp-file>/CP/vendorTotalDebit.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorTotalDebit</servlet-name>
+    <url-pattern>/vendorTotalDebit</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>uploadCateProduct</servlet-name>
+    <jsp-file>/CP/uploadCateProduct.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>uploadCateProduct</servlet-name>
+    <url-pattern>/uploadCateProduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>salesReport</servlet-name>
+    <jsp-file>/CP/salesReport.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>salesReport</servlet-name>
+    <url-pattern>/salesReport</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>bulkRateUpdate</servlet-name>
+    <jsp-file>/CP/bulkRateUpdate.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>bulkRateUpdate</servlet-name>
+    <url-pattern>/bulkRateUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updatebulkRateUpdate</servlet-name>
+    <jsp-file>/CP/updatebulkRateUpdate.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>updatebulkRateUpdate</servlet-name>
+    <url-pattern>/updatebulkRateUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>addVendor</servlet-name>
+    <jsp-file>/CP/addVendor.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>addVendor</servlet-name>
+    <url-pattern>/addVendor</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>insertVendor</servlet-name>
+    <jsp-file>/CP/insertVendor.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>insertVendor</servlet-name>
+    <url-pattern>/insertVendor</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorEditForm</servlet-name>
+    <jsp-file>/CP/vendorEditForm.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorEditForm</servlet-name>
+    <url-pattern>/vendorEditForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>updateVendor</servlet-name>
+    <jsp-file>/CP/updateVendor.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>updateVendor</servlet-name>
+    <url-pattern>/updateVendor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>VendorDetails</servlet-name>
+    <jsp-file>/CP/VendorDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VendorDetails</servlet-name>
+    <url-pattern>/VendorDetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorPaymentsEntry</servlet-name>
+    <jsp-file>/CP/vendorPaymentsEntry.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorPaymentsEntry</servlet-name>
+    <url-pattern>/vendorPaymentsEntry</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>insertVendorPayments</servlet-name>
+    <jsp-file>/CP/insertVendorPayments.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertVendorPayments</servlet-name>
+    <url-pattern>/insertVendorPayments</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorCategories</servlet-name>
+    <jsp-file>/CP/vendor/vendorCategories.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorCategories</servlet-name>
+    <url-pattern>/vendorCategories</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>registerVendor</servlet-name>
+    <jsp-file>/CP/vendor/registerVendor.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>registerVendor</servlet-name>
+    <url-pattern>/registerVendor</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorLogin</servlet-name>
+    <jsp-file>/vendorLogin.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorLogin</servlet-name>
+    <url-pattern>/vendorLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorLoginValidate</servlet-name>
+    <jsp-file>/CP/vendor/vendorLoginValidate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorLoginValidate</servlet-name>
+    <url-pattern>/vendorLoginValidate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorlogout</servlet-name>
+    <jsp-file>/CP/vendor/logout.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorlogout</servlet-name>
+    <url-pattern>/vendorlogout</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendordashboard</servlet-name>
+    <jsp-file>/CP/vendor/dashboard.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendordashboard</servlet-name>
+    <url-pattern>/vendordashboard</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorproductForm</servlet-name>
+    <jsp-file>/CP/vendor/ProductForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorproductForm</servlet-name>
+    <url-pattern>/vendorproductForm</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>vendorproductView</servlet-name>
+    <jsp-file>/CP/vendor/ProductDetailsView.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorproductView</servlet-name>
+    <url-pattern>/vendorproductView</url-pattern>
+  </servlet-mapping>
+  
+  
+     <servlet>
+    <servlet-name>vendorbulkUpload</servlet-name>
+    <jsp-file>/CP/vendor/UploadProductForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorbulkUpload</servlet-name>
+    <url-pattern>/vendorbulkUpload</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorrateForm</servlet-name>
+    <jsp-file>/CP/vendor/RateForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorrateForm</servlet-name>
+    <url-pattern>/vendorrateForm</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorUpdateProductDetails</servlet-name>
+    <jsp-file>/CP/vendor/UpdateProductDetails.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorUpdateProductDetails</servlet-name>
+    <url-pattern>/vendorUpdateProductDetails</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorInsertProductDetail</servlet-name>
+    <jsp-file>/CP/vendor/InsertProductDetail.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorInsertProductDetail</servlet-name>
+    <url-pattern>/vendorInsertProductDetail</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>vendorInsertUpdateRate</servlet-name>
+    <jsp-file>/CP/vendor/InsertUpdateRate.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorInsertUpdateRate</servlet-name>
+    <url-pattern>/vendorInsertUpdateRate</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+    <servlet-name>vendorBulkInsertProduct</servlet-name>
+    <jsp-file>/CP/vendor/BulkInsertProduct.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorBulkInsertProduct</servlet-name>
+    <url-pattern>/vendorBulkInsertProduct</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorProductEditForm</servlet-name>
+    <jsp-file>/CP/vendor/ProductEditForm.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>vendorProductEditForm</servlet-name>
+    <url-pattern>/vendorProductEditForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorRechargeReminder</servlet-name>
+    <jsp-file>/CP/vendor/vendorRechargeReminder.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorRechargeReminder</servlet-name>
+    <url-pattern>/vendorRechargeReminder</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>vendorCallReminder</servlet-name>
+    <jsp-file>/CP/vendor/vendorCallReminder.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorCallReminder</servlet-name>
+    <url-pattern>/vendorCallReminder</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorstatusUpdate</servlet-name>
+    <jsp-file>/CP/vendor/vendorstatusUpdate.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorstatusUpdate</servlet-name>
+    <url-pattern>/vendorstatusUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorupdateStatus</servlet-name>
+    <jsp-file>/CP/vendor/vendorupdateStatus.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorupdateStatus</servlet-name>
+    <url-pattern>/vendorupdateStatus</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorProfile</servlet-name>
+    <jsp-file>/CP/vendor/vendorProfile.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorProfile</servlet-name>
+    <url-pattern>/vendorProfile</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorProfileUpdate</servlet-name>
+    <jsp-file>/CP/vendor/vendorProfileUpdate.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorProfileUpdate</servlet-name>
+    <url-pattern>/vendorProfileUpdate</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorStatement</servlet-name>
+    <jsp-file>/CP/vendor/vendorStatement.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorStatement</servlet-name>
+    <url-pattern>/vendorStatement</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorTotalStatement</servlet-name>
+    <jsp-file>/CP/vendor/vendorTotalStatement.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorTotalStatement</servlet-name>
+    <url-pattern>/vendorTotalStatement</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorTotalCreditStatement</servlet-name>
+    <jsp-file>/CP/vendor/vendorTotalCreditStatement.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorTotalCreditStatement</servlet-name>
+    <url-pattern>/vendorTotalCreditStatement</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>vendorTotalDebitStatement</servlet-name>
+    <jsp-file>/CP/vendor/vendorTotalDebitStatement.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorTotalDebitStatement</servlet-name>
+    <url-pattern>/vendorTotalDebitStatement</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+    <servlet-name>vendorStatements</servlet-name>
+    <jsp-file>/CP/vendorStatement.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>vendorStatements</servlet-name>
+    <url-pattern>/vendorStatements</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exports</servlet-name>
+    <jsp-file>/CP/exports.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>exports</servlet-name>
+    <url-pattern>/exports</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>exportUserRegistration</servlet-name>
+    <jsp-file>/CP/exportUserRegistration.jsp</jsp-file>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>exportUserRegistration</servlet-name>
+    <url-pattern>/exportUserRegistration</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
